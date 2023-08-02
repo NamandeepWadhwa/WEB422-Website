@@ -23,8 +23,11 @@ export default function Login(props){
   const[warning,setWarning]=useState("");
 
   async function updatAtomms(){
+    console.log("updating atoms");
     setFavourites(await getFavourites());
+    console.log("favourites updated");
     setHistory(await getHistory());
+    console.log("history updated");
   
   }
 
@@ -32,7 +35,9 @@ export default function Login(props){
     e.preventDefault();
    try{
     await authenticateUser(user, password);
+    console.log("token", readToken());
     await updatAtomms();
+    console.log("atoms updated");
    
     
     router.push("/favourites");
