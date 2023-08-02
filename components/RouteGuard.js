@@ -17,13 +17,13 @@ export default function RouteGuard(props){
       }
      const router=useRouter();
     useEffect(()=>{
-        updatAtomms();
+      updatAtomms();
         authCheck(router.pathname);
         router.events.on('routeChangeComplete',authCheck);
         return ()=>{
             router.events.off('routerChangeComplete',authCheck);
         };
-    });
+    },[]);
 
     function authCheck(url){
         const path=url.split('?')[0];
