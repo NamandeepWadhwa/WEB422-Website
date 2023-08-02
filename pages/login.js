@@ -8,7 +8,7 @@ import {getHistory} from "@/lib/userData";
 import  {getFavourites}  from "@/lib/userData";
 import { favoritesAtom } from "@/store";
 import {searchHistoryAtom } from "@/store";
-import { tokenAtom } from "@/store";
+
 
 
 
@@ -21,7 +21,7 @@ export default function Login(props){
   const [history,setHistory]=useAtom(searchHistoryAtom);
   const [favourites,setFavourites]=useAtom(favoritesAtom);
   const[warning,setWarning]=useState("");
-  const[tokenValue,setTokenValue]=useAtom(tokenAtom);
+
   async function updatAtomms(){
     setFavourites(await getFavourites());
     setHistory(await getHistory());
@@ -33,7 +33,7 @@ export default function Login(props){
    try{
     await authenticateUser(user, password);
     await updatAtomms();
-    setTokenValue(readToken());
+   
     
     router.push("/favourites");
    }
