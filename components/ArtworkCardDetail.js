@@ -17,7 +17,7 @@ export default function ArtworkCardDetail(props){
 setShowAdded(favouritesList?.includes(props.objectId));
 
 
-  },[favouritesList]);
+  },[favouritesList,props.objectId]);
  async function favouritesClicked () {
 
     if(showAdded==true)

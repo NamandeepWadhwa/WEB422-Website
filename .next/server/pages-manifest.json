@@ -1,6 +1,15 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/favourites": "pages/favourites.html",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_error": "pages/_error.js",
+  "/artwork": "pages/artwork.html",
+  "/artwork/[objectID]": "pages/artwork/[objectID].html",
+  "/history": "pages/history.html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/register": "pages/register.html",
+  "/search": "pages/search.html",
+  "/404": "pages/404.html"
 }
