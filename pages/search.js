@@ -15,7 +15,7 @@ export default function Search() {
     const router=useRouter();
 
 async function submitForm(data){
-  console.log(data)
+  
 
     let queryString="";
     console.log(data.geoLoaction?"&geoLocation="+data.geoLoaction:"Nope")
@@ -24,7 +24,7 @@ async function submitForm(data){
     queryString=queryString+"&isOnView="+data.isOnView;
     queryString=queryString+"&isHighlight="+data.isHighlight;
     queryString=queryString+"&q="+data.q;
-    setSearchHistory(addToHistory(queryString));
+    setSearchHistory(await addToHistory(queryString));
     router.push(`/artwork?${queryString}`);
 }
 

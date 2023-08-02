@@ -21,13 +21,7 @@ export default function MainNav() {
   
     const router = useRouter();
 
-    function logout(){
-     
-      setIsExpanded(false);
-      removeToken();
-      
-      router.push('/login');
-    }
+   
     let token=readToken();
    async function submitform(e){
 
@@ -48,6 +42,13 @@ export default function MainNav() {
    
     
    }
+   function logout(){
+     
+    onclickLink();
+    removeToken();
+    
+    router.push('/login');
+  }
    
   return (
     <>

@@ -22,15 +22,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/favourites": [
+    "/artwork": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/favourites.js"
+      "static/chunks/pages/artwork.js"
     ],
-    "/login": [
+    "/search": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/login.js"
+      "static/chunks/pages/search.js"
     ]
   },
   "ampFirstPages": []
