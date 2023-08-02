@@ -37,8 +37,6 @@ export default function Login(props){
     await authenticateUser(user, password);
    
     await updatAtomms();
-   
-   
     
     router.push("/favourites");
    }

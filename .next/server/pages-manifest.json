@@ -1,7 +1,9 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/favourites": "pages/favourites.js",
   "/login": "pages/login.js",
-  "/favourites": "pages/favourites.js"
+  "/register": "pages/register.js"
 }
